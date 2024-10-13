@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SplashScreen" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background -->
+        <item name="windowSplashScreenBackground">@color/app_background</item>
+        <!-- Set the splash screen icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/love_icon</item>
+        <!-- Set the icon background -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/splash_icon_background</item>
+        <!-- Duration for the splash screen Next you can use the postSplashScreenTheme property to define a
+        different theme that the app will switch to after the splash screen has been shown-->
+        <item name="postSplashScreenTheme">@style/Base.Theme.MawadaRahma</item>
+    </style>
+
+
+
+</resources>

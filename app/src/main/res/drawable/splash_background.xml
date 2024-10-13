@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom Layer: Background Color -->
+    <item android:drawable="@color/app_background" />
+
+    <!-- Top Layer: Background Color -->
+    <item
+        android:width="192dp"
+        android:height="192dp"
+        android:gravity="center"
+        android:drawable="@drawable/love_icon"
+        />
+
+
+</layer-list>
+
+<!--
+    a layer-list is a drawable resource that allows you to stack multiple drawable elements
+    (such as shapes, images, or other drawables) on top of each other. This is particularly
+    useful for creating complex backgrounds, buttons with multiple layers, or any UI element
+    that requires layering effects.
+-->
