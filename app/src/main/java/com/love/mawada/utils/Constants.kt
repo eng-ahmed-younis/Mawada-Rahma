@@ -1,7 +1,7 @@
 package com.love.mawada.utils
 
 import com.love.mawada.R
-import com.love.mawada.screens.home.pager.GeneralFragment
+import com.love.mawada.screens.home.pager.general.GeneralFragment
 import com.love.mawada.screens.home.pager.Screen
 import com.love.mawada.screens.home.pager.SexualFragment
 import com.love.mawada.screens.home.pager.WishFragment

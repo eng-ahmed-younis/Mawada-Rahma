@@ -15,18 +15,19 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
     layoutInflater = FragmentHomeBinding::inflate
 ) {
 
-    private lateinit var pagerAdapter: LovePagerAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        pagerAdapter = LovePagerAdapter(this.requireActivity())
         setupHomeViewPager()
 
     }
 
 
     private fun setupHomeViewPager() {
-        LovePagerAdapter(this.requireActivity()).apply {
+        LovePagerAdapter(
+            this.childFragmentManager,
+            this.requireActivity()
+        ).apply {
             repeat(Constants.screens.size) {
                 this.addScreen(Constants.screens[it].fragment)
             }

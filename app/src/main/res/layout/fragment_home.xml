@@ -23,34 +23,89 @@
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 app:layout_scrollFlags="scroll|enterAlways">
 
 
-                <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/tabLayout"
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/header_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@android:color/transparent"
-                    app:tabMode="scrollable"
-                    app:tabIndicator="@color/design_default_color_primary"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:tabIndicatorAnimationMode="elastic"
-                    app:tabIndicatorGravity="bottom"
-                    app:tabIndicatorColor="#f00"
-                    app:tabTextColor="@color/black"
-                    app:tabSelectedTextColor="#0f0"
-                    app:tabIndicatorHeight="2dp"
-                    app:tabGravity="fill"
-                    android:textAlignment="center"
-                    app:tabTextAppearance="@style/TabLayoutTextStyle"
-                    app:tabInlineLabel="true"
-                    app:tabIndicatorFullWidth="false"
-                    />
+                    android:orientation="vertical"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/drawer_ic"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="15dp"
+                            android:tint="@color/items_colors"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="@id/app_name"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/app_name"
+                            app:layout_constraintEnd_toStartOf="@id/app_name"
+                            app:srcCompat="@drawable/drawer_ic" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/app_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/app_name_short"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/drawer_ic"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:textColor="@color/items_colors"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/notification_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="15dp"
+                            android:tint="@color/items_colors"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="@id/app_name"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/app_name"
+                            app:srcCompat="@drawable/notifications_ic" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        app:tabMode="fixed"
+                        app:tabIndicator="@color/design_default_color_primary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tabIndicatorAnimationMode="elastic"
+                        app:tabIndicatorGravity="bottom"
+                        app:tabIndicatorColor="@color/items_colors"
+                        app:tabTextColor="@color/items_colors"
+                        app:tabSelectedTextColor="@color/black"
+                        app:tabIndicatorHeight="2dp"
+                        app:tabGravity="fill"
+                        android:textAlignment="center"
+                        app:tabTextAppearance="@style/TabLayoutTextStyle"
+                        app:tabInlineLabel="true"
+                        app:tabIndicatorFullWidth="false"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
             </com.google.android.material.appbar.MaterialToolbar>
+
         </com.google.android.material.appbar.AppBarLayout>
 
 

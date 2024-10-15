@@ -4,6 +4,11 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="app_background">#f4eada</color>
+    <color name="your_status_bar_color">#FF5722</color> <!-- Example color -->
+
+    <color name="app_background">@color/white</color>
     <color name="splash_icon_background">#000000</color>
+    <color name="items_colors">#737370</color>
+
+    <color name="system_color">#000</color>
 </resources>

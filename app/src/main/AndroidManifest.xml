@@ -11,12 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:name=".LoveApp"
-        android:theme="@style/Theme.MawadaRahma"
+        android:theme="@style/SplashScreen"
         tools:targetApi="31">
-
-        <activity
-            android:name=".screens.splash.SplashActivity"
-            android:exported="false" />
 
 
         <activity

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mawada Rahma</string>
+    <string name="app_name_short">Mawada</string>
+    <string name="general">General</string>
+    <string name="wish">Wish</string>
+    <string name="sexual">Sexual</string>
+
 </resources>
+
